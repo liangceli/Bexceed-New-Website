@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vercel/
+.env*
+!.env.example
+design/
+exports/
+tmp/
+skill-upgrade-v23/
+qa/
+*.log
+.DS_Store
+scripts/prepare-assets.py

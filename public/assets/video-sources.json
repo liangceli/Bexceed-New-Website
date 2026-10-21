@@ -1,0 +1,58 @@
+{
+  "dimensions": [
+    1920,
+    800
+  ],
+  "fps": 30.0,
+  "decodedFrames": 300,
+  "duration": 10.0,
+  "bytes": 5454467,
+  "audio": false,
+  "liveAction": true,
+  "textBakedIntoVideo": false,
+  "loopBoundaryMeanDifference": 4.998546123504639,
+  "minimumMeanBrightness": 97.281171875,
+  "shots": [
+    {
+      "file": "7821807-calculator.mp4",
+      "start": 0.65,
+      "crop_y": 150,
+      "title": "01 / Accounting in action",
+      "page": "https://www.pexels.com/video/man-using-a-calculator-7821807/",
+      "creator": "RDNE Stock project"
+    },
+    {
+      "file": "7822017-client-consultation.mp4",
+      "start": 2.15,
+      "crop_y": 65,
+      "title": "02 / Advice, face to face",
+      "page": "https://www.pexels.com/video/an-agent-talking-to-his-client-while-holding-documents-7822017/",
+      "creator": "RDNE Stock project"
+    },
+    {
+      "file": "8293495-financial-review.mp4",
+      "start": 3.1,
+      "crop_y": 160,
+      "title": "03 / Making the numbers clear",
+      "page": "https://www.pexels.com/video/a-person-showing-the-percentage-and-its-value-8293495/",
+      "creator": "RDNE Stock project"
+    },
+    {
+      "file": "7821621-handshake.mp4",
+      "start": 0.55,
+      "crop_y": 140,
+      "title": "04 / A trusted relationship",
+      "page": "https://www.pexels.com/video/businessman-doing-a-handshake-7821621/",
+      "creator": "RDNE Stock project"
+    }
+  ],
+  "license": "https://www.pexels.com/license/",
+  "usage": "Illustrative stock footage. These people and locations are not represented as Bexceed staff, clients or offices.",
+  "transitions": [
+    "10-frame cross dissolve",
+    "10-frame feathered lateral reveal",
+    "10-frame cross dissolve",
+    "10-frame loop cross dissolve"
+  ],
+  "downloaded": "2026-10-21"
+}
