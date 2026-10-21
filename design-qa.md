@@ -38,4 +38,6 @@ The browser-rendered implementation was compared at 1440px in English, first pri
 
 Independent code review found an unsafe inherited-property locale lookup; fixed with an own-property allowlist and regression coverage. Minor reduced-motion and Escape-focus issues were also corrected. No remaining P0/P1/P2 findings.
 
+Deployment smoke test: https://bexceed-new-website.vercel.app/ loads the complete homepage and plays the 10-second hero. The carousel's mandatory snap initially removed its leading gutter; explicit responsive scroll padding now preserves it (browser check at 1280px: scrollLeft 0, first card x 96, matching the content container). A follow-up production build passed.
+
 This release is the homepage. Separate interior pages and confirmed fee amounts remain future work by agreement. The contact form opens an email draft in the visitor's mail client, as expressly approved; it does not claim that a message has been sent.

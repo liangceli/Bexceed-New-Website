@@ -16,3 +16,8 @@ html[lang^=zh] body{font-family:'Source Sans 3','Microsoft YaHei','PingFang SC',
 /* Full-width footage avoids a visible seam at the left of the hero. */
 .hero.has-video .hero-video{left:0;width:100%}
 .our-office h2{font-weight:750}
+/* Match snap positions to the content gutters instead of the viewport edge. */
+.feedback-window{--feedback-gutter:max(calc((100vw - 1248px)/2),96px);padding-inline:var(--feedback-gutter);scroll-padding-inline:var(--feedback-gutter)}
+@media(max-width:1250px){.feedback-window{--feedback-gutter:48px}}
+@media(max-width:900px){.feedback-window{--feedback-gutter:32px}}
+@media(max-width:640px){.feedback-window{--feedback-gutter:20px}}

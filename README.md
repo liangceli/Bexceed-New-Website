@@ -6,6 +6,8 @@ See [the current design baseline](design/full-site-design-location.md). Do not c
 
 ## Homepage implementation — 21 October 2026
 
+Live site: https://bexceed-new-website.vercel.app/
+
 The root project implements the approved V7 homepage, including its uniform pale-blue Our Office section. Vite serves and builds a lightweight vanilla JavaScript site. Design exploration files remain local and are excluded from the production repository.
 
 ```sh
