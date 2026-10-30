@@ -16,13 +16,68 @@ html[lang^=zh] body{font-family:'Source Sans 3','Microsoft YaHei','PingFang SC',
 /* Full-width footage avoids a visible seam at the left of the hero. */
 .hero.has-video .hero-video{left:0;width:100%}
 .our-office h2{font-weight:750}
-.insights{background:#f3f8fb}
-.insights-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.insights-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:80px;padding:20px 22px;background:#fff;border:1px solid #dce8ef;color:#194973;font-weight:700;transition:border-color .18s ease,box-shadow .18s ease}
-.insights-links a:hover{border-color:#00b0f0;box-shadow:0 4px 14px #19497312}
-@media(max-width:640px){.insights-links{grid-template-columns:1fr;gap:12px}.insights-links a{min-height:62px;padding:16px 18px}}
+/* Accent the second headline in the brand's gold and soften the supporting copy. */
+.hero h1 span:last-child{color:#f3a50a;text-shadow:0 2px 12px #0b263d99}
+.hero-description{color:#c3ddeb;text-shadow:0 1px 8px #0b263d99}
+.insights{background:#fff}
+.insights-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.insight-card{display:flex;flex-direction:column;overflow:hidden;border-radius:12px;background:#eaf4f9;color:#194973;text-decoration:none;box-shadow:0 5px 18px #19497312;transition:transform .2s ease,box-shadow .2s ease}
+.insight-card:hover,.insight-card:focus-visible{transform:translateY(-3px);box-shadow:0 10px 24px #19497324}
+.insight-card:focus-visible{outline:3px solid #00b0f0;outline-offset:4px}
+.insight-image{display:block;width:100%;height:auto;aspect-ratio:1.38;object-fit:cover}
+.insight-body{display:flex;flex:1;flex-direction:column;padding:24px 25px 25px}
+.insight-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px;font-size:14px;color:#506e86}
+.insight-category{display:inline-block;padding:5px 12px;border-radius:99px;background:#194973;color:white;font-size:13px;font-weight:700;line-height:1.3}
+.insight-body h3{font-size:22px;line-height:1.23;letter-spacing:-.3px;color:#194973}
+.insight-body p{margin:13px 0 20px;color:#55738d;font-size:16px;line-height:1.5}
+.insight-read{margin-top:auto;color:#007eae;font-size:15px;font-weight:700}
+.insight-read .link-chevron{margin-left:8px}
+.insights-resources{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:25px}
+.insights-resources a{color:#194973;font-size:15px;font-weight:700;text-decoration:none}
+.insights-resources a:hover{text-decoration:underline}
+@media(max-width:900px){.insights-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}}
+@media(max-width:640px){.insights-grid{grid-template-columns:1fr;gap:20px}.insight-image{aspect-ratio:1.5}.insight-body{padding:21px 22px 23px}.insight-body h3{font-size:21px}.insights-resources{margin-top:22px}}
+@media(prefers-reduced-motion:reduce){.insight-card{transition:none}.insight-card:hover,.insight-card:focus-visible{transform:none}}
 /* Match snap positions to the content gutters instead of the viewport edge. */
 .feedback-window{--feedback-gutter:max(calc((100vw - 1248px)/2),96px);padding-inline:var(--feedback-gutter);scroll-padding-inline:var(--feedback-gutter)}
 @media(max-width:1250px){.feedback-window{--feedback-gutter:48px}}
 @media(max-width:900px){.feedback-window{--feedback-gutter:32px}}
 @media(max-width:640px){.feedback-window{--feedback-gutter:20px}}
+
+/* Keep the client's original full-colour logo legible on both surfaces. */
+.header{background:rgba(246,250,253,.96);color:#194973;backdrop-filter:blur(12px)}
+.header.scrolled,.header.menu-open{background:rgba(255,255,255,.98);color:#194973}
+.header .brand,.header .brand small,.header .desktop-nav,.header .desktop-nav .active{color:#194973}
+.header .brand-symbol,.header.scrolled .brand-symbol,.header.menu-open .brand-symbol{filter:none}
+.header .desktop-nav a:hover{color:#0086c5}
+.header .language-pill{color:#194973;border-color:#b6cfdf;background:transparent}
+.header .language-pill:hover{background:#e6f3fa;border-color:#8ebbd5}
+.header .language-pill img,.header.scrolled .language-pill img,.header.menu-open .language-pill img{filter:none}
+.footer-brand .brand{display:inline-flex;width:max-content;max-width:100%;padding:10px 15px;background:#f4f9fc;border-radius:6px;color:#194973}
+.footer-brand .brand small,.footer-brand .brand:hover{color:#194973}
+@media(max-width:1100px){.header .menu-toggle{border-color:#b6cfdf}.header .menu-toggle img,.header.scrolled .menu-toggle img,.header.menu-open .menu-toggle img{filter:none}.header .menu-toggle:hover{background:#e6f3fa;border-color:#8ebbd5}}
+
+/* Homepage pricing uses the same container, columns and image height as Why Bexceed. */
+.pricing{padding:44px 0;background:var(--mist)}
+.services{background:#fff}
+.pricing-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:center}
+.pricing-copy{min-width:0}
+.pricing .pricing-intro{margin-bottom:18px}
+.pricing .pricing-intro h2{font-size:36px;line-height:1.2;letter-spacing:-.9px;white-space:normal}
+.pricing .price-tabs{width:100%;max-width:none;display:flex;gap:0;margin-bottom:14px;overflow:visible}
+.pricing .price-tabs button{flex:1;min-width:0;padding:11px 6px;font-size:14px;line-height:1.25;text-align:center;white-space:normal}
+.pricing-rows{border-top:1px solid #d4e5ee}
+.pricing-row{padding:11px 0 12px;border-bottom:1px solid #d4e5ee}
+.pricing-row-heading{display:flex;align-items:baseline;justify-content:space-between;gap:15px}
+.pricing-row h3{font-size:18px;line-height:1.3;color:#194973}
+.pricing-row .fee{font-size:14px;font-weight:700;color:#194973}
+.pricing-row p{margin:5px 0 0;font-size:15px;line-height:1.4;color:#647f98}
+.pricing .pricing-bottom{display:block;margin-top:15px}
+.pricing .pricing-bottom>p{max-width:none;font-size:13px;line-height:1.4}
+.pricing .pricing-bottom>.actions{display:flex;justify-content:flex-start;align-items:center;gap:26px;flex-wrap:wrap;margin-top:15px}
+.pricing .pricing-bottom .button{min-height:46px;padding:10px 27px}
+.pricing-photo{display:block;width:100%;height:522px;object-fit:cover;border-radius:3px}
+@media(max-width:1250px){.pricing-layout{gap:36px}}
+@media(max-width:1100px){.pricing-photo{height:530px}}
+@media(max-width:900px){.pricing-layout{grid-template-columns:1fr;gap:28px}.pricing .pricing-intro h2{font-size:34px}.pricing-photo{height:440px}}
+@media(max-width:640px){.pricing{padding:38px 0}.pricing-layout{gap:28px}.pricing .pricing-intro h2{font-size:30px;line-height:1.22}.pricing .price-tabs button,.pricing .price-tabs button:first-child{font-size:12px;min-height:45px;padding:9px 5px}.pricing-row h3{font-size:17px}.pricing-row p{font-size:15px}.pricing .pricing-bottom>p{margin:0}.pricing .pricing-bottom>.actions{gap:16px;margin-top:18px}.pricing-photo{height:330px}}
