@@ -22,9 +22,9 @@ Use Node.js 22.12 or newer. Local development uses port 4191. Vercel builds with
 
 - English, Simplified Chinese, Traditional Chinese and Vietnamese are in `src/content.js`. Language selection updates the page, URL and local preference without discarding entered form values.
 - The contact form validates required fields and opens an email draft addressed to `admin@bexceed.com.au`. The visitor sends it from their email application. There is no mail server, stored enquiry database, analytics or automatic sending.
-- The homepage includes working service dialogs, price tabs, all-pricing overview, feedback carousel, mobile navigation, and privacy information. Separate interior pages are outside this implementation phase.
+- The homepage includes working service dialogs, price tabs, all-pricing overview, an insights section, mobile navigation, and privacy information. Separate interior pages are outside this implementation phase.
 - Fees remain TBC until the client confirms them. Edit the locale content together when fees are approved.
-- The 10-second hero and 6-second adviser videos are muted, pausable and respect reduced-motion/data-saving preferences. Poster images are retained for fallback. `?still=1` disables automatic playback for visual comparison.
+- The 10-second hero and 6-second adviser videos are muted and respect reduced-motion/data-saving preferences. The adviser video has a playback control. Poster images are retained for fallback. `?still=1` disables automatic playback for visual comparison.
 - Images and videos are illustrative; replace them with approved Bexceed photography when supplied. Asset sources and licences are in `ASSET_LICENSES.md` and `public/licenses/`.
 
 See `design-qa.md` for verification and scope. No environment secrets are required.
