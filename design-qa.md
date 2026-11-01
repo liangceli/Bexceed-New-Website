@@ -59,4 +59,6 @@ Fees remain TBC until the client supplies amounts. Contact delivery remains the 
 
 ## Release
 
-Local implementation and QA passed. GitHub/Vercel release verification is recorded separately after publishing.
+Published application commit: 6e87ec37a3f532155e3009d530f611adf15665c1 on GitHub main. The remote branch was checked after push.
+
+Production https://bexceed-new-website.vercel.app/ serves the verified index-CL8DzGwv.js build. All 25 page URLs plus sitemap, robots and a responsive image returned HTTP 200 with the expected content. Six representative live pages passed a 390px Traditional Chinese browser check with no missing images, horizontal overflow or script errors. The live About desktop screenshot was inspected. Evidence: qa/full-site/release.json and qa/full-site/about-production.png.
