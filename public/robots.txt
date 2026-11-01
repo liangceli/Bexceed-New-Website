@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bexceed-new-website.vercel.app/sitemap.xml

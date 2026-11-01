@@ -2,7 +2,7 @@
 
 ## Brand and concept imagery
 
-The Bexceed mark was supplied by the client. The white version is the approved contrast variant. Rights remain with its owner.
+The Bexceed mark was supplied by the client. Only the original-color client version is permitted; the header and footer use a pale backing for contrast. Older white variants are not used. Rights remain with its owner.
 
 The hero poster is a frame from the approved stock-footage edit. Service photos, adviser poster and contact photo were carried forward from the user-approved homepage concept; the small-business service photo, office clean plate and transparent benefit illustrations were prepared using image generation. These are illustrative visuals, not representations of actual Bexceed staff, clients or premises. Original design files and generation provenance remain in the local `design/` folder; web-optimised assets are in `public/assets/`.
 
@@ -28,3 +28,12 @@ The adviser video uses a six-second excerpt of the consultation clip. The footag
 - Manrope: SIL Open Font License, supplied in `public/licenses/Manrope-OFL.txt`.
 - Source Sans 3: SIL Open Font License, supplied in `public/licenses/SourceSans3-OFL.txt`.
 - Small interface controls: Phosphor Icons, MIT licence in `public/licenses/Phosphor-MIT.txt`. The four primary benefit illustrations are the custom raster assets described above.
+
+
+## Interior page assets — approved 30 October 2026 concepts
+
+The four conceptual hero backgrounds, adviser illustration/photo, three audience photographs, pricing scope artwork, learning artwork, four contact photographs and three bespoke icon sheets were generated to match the approved v3 concepts. They illustrate the service and are not documentary photographs of Bexceed staff, clients or premises. The original raster files remain in `public/assets/pages/`; responsive WebP delivery files are in `public/assets/pages/web/`. Generation records and approved visual sources remain in the local `design/page-concepts-2026-10-30-v3-concept/` folder.
+
+Article covers (STP, Xero Sign, SMSF and sharing economy) were reused from the client's original website for their corresponding archived articles. Ownership remains with the respective owners; they are not general stock assets.
+
+Seven video posters were retrieved from YouTube's thumbnail endpoint for the exact original embed IDs. Videos remain on their publishers' YouTube accounts and are embedded only after a visitor chooses to play them. Posters link exclusively to those videos; footage has not been downloaded or republished. The original attribution and publication dates are retained in `src/page-data.js`. Four unavailable original videos are represented as official resource cards rather than broken players. Technical check details are recorded in `docs/content-coverage.md`.

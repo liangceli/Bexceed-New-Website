@@ -1,78 +1,62 @@
-# Bexceed homepage implementation QA
+# Bexceed full website QA
 
-Date: 21 October 2026
+Date: 2 November 2026 (Australia/Adelaide)
 
 final result: passed
 
-## Reference and comparison
+## Scope and design authority
 
-Authority: `design/our-office-v7-2026-10-21/bexceed-home-desktop-v7-2x.png` (2880 × 8494), the approved 1440px desktop homepage. It incorporates the final uniform pale-blue office panel between client feedback and the contact form. No withdrawn interior concepts were used.
+The existing approved homepage and four approved v3 concepts are the visual authority. The full site now exposes 25 routes in English, Simplified Chinese and Traditional Chinese, including all service, pricing, article and video category pages. The old homepage-only QA is preserved in docs/homepage-qa-history.md; its former language/logo/section descriptions are historical, not current requirements.
 
-The browser-rendered implementation was compared at 1440px in English, first pricing tab and poster state (`?still=1`). The complete implementation export is `qa/desktop.png` (2880 × 8514). The 10 CSS-pixel overall height difference comes from the functional form/feedback content. The reference, full render and a side-by-side overview were opened and inspected. Live browser screenshots were also inspected because DOM-to-image exports can differ from browser rendering in grid margins and line wrapping; the live browser is authoritative for layout.
+References: design/page-concepts-2026-10-30-v3-concept/{about,services,pricing,insights}-desktop.png. These local approved references are ignored by Git. The prohibited website-design-to-pixel-perfect skill was not used.
 
-### Visual checks
+## Visual comparison
 
-| Area | Result |
+The source and Chrome implementation were opened together in side-by-side comparison boards at equal displayed widths. Desktop implementation screenshots use a 1440 x 1000 viewport, device scale 1, full page. Phone screenshots use 390 x 844. The source/render pixel dimensions are:
+
+| Page | Approved source | Browser render |
+| --- | --- | --- |
+| About | 850 x 1851 | 1440 x 2848 |
+| Services | 780 x 2014 | 1440 x 3727 |
+| Pricing | 773 x 2033 | 1440 x 3598 |
+| Insights | 769 x 2045 | 1440 x 3690 |
+
+Evidence: qa/full-site/comparisons/{about,services,pricing,insights}.png, the corresponding -focus.png comparisons, mobile-pages.png, and individual desktop/mobile screenshots under qa/full-site/.
+
+| Surface | Verification |
 | --- | --- |
-| Hierarchy and layout | Approved header, hero, trust strip, three services, Why Bexceed, tabbed pricing, feedback, office, contact and footer remain in the same order with the original desktop rhythm. |
-| Typography | Manrope headings and Source Sans 3 body copy; consistent hierarchy, line height and button sizing. Chinese uses a suitable system fallback. |
-| Brand | #194973 navy, #00B0F0 cyan and #F3A50A amber. White logo over hero/footer, navy logo over scrolled header. |
-| Office | Clean pale-blue background with no directional vignette or centre-light gradient. All text is live and translates. |
-| Imagery and icons | Approved imagery retained, four transparent navy/cyan/amber illustrations, no circular backgrounds. Optimised web formats. |
-| Responsive | 1440, 1280, 768, 390, 375 and 320px checked for all four locales: 24 combinations with no document or tested content/control horizontal overflow. Mobile header, contact region, service cards, pricing and footer visually inspected. |
-| Copy | No invented prices; fees TBC. Original business contact details and three client-feedback entries retained. |
+| Hierarchy and layout | Four distinct conceptual heroes, approved section order, service imagery and expertise tabs, pricing rows and scope image, article archive and video resources. Real content is rendered as HTML, never a flattened mockup. |
+| Typography | Manrope headings and Source Sans 3 body; coordinated desktop and phone scales. About hero line wrapping corrected. Shared header, footer, buttons and forms retain established homepage dimensions. |
+| Color and contrast | Navy #194973, cyan #00b0f0, amber #f3a50a, white and uniform pale #f1f8fc. About benefits remain pale and the following contact section is white. Representative section boundaries were checked programmatically and visually. |
+| Imagery and icons | Unique page hero concepts, context-specific audience/contact photographs, original article covers and bespoke illustrated icons. Original-color client logo only. A sprite-row edge found in the final Services mobile review was clipped without altering the icon; final evidence is qa/full-site/service-icons-final.png. |
+| Responsive behavior | All 25 routes, three languages and six widths checked. Desktop grids become appropriate phone stacks; tabs wrap within their panels; long headings, contact details and form fields stay inside the viewport. |
 
-## Functional verification
+Intentional differences from generated concepts: shared navigation/form/footer dimensions follow the approved live homepage; the About contact background changes to white at the user's request; uniform brand surfaces replace texture in generated concepts. Full original service coverage can produce additional text wrapping. These comparisons are a visual implementation review, not a claim of zero numerical pixel difference.
 
-- Price category buttons and keyboard arrow navigation update the correct cards and selected state.
-- Service/about/pricing/privacy dialogs open and close, including Escape. Consultation CTAs lead to the form and can preselect the service.
-- Feedback next control scrolls to subsequent reviews; horizontal native scrolling is available.
-- Header changes to light background on scroll; mobile menu opens and contact selection closes it.
-- All four locale dictionaries have matching complete structures. Language switching preserves existing form values, updates document language and saves the selection. Invalid/prototype-property locale parameters safely fall back to English.
-- Empty required fields trigger a visible validation message. Draft generation preserves multilingual text and reserved URI characters, uses a fixed recipient and cannot append mail headers. No enquiry was sent during testing.
-- Hero browser media state: 10 seconds, muted, playing, readyState 4. Adviser video: 6 seconds, playing when visible, readyState 4. Both have pause/play controls. Reduced motion suppresses autoplay and is rechecked by the visibility observer.
-- Live application browser console inspected: no application errors or warnings. A QA-wrapper MutationObserver notification was not present in the production application.
-- `npm test`: 5 tests passed. `npm run build`: production bundle successfully generated.
+## Automated and interaction evidence
 
-## Review and scope
+- npm test: 8 passing tests, zero failures.
+- npm run build: production build passed after the final illustration-edge adjustment. Final bundles: index-CL8DzGwv.js and index-BgPeH-Fg.css.
+- tests/browser.mjs against production preview http://127.0.0.1:4192: 25 routes x 3 languages x 6 widths (320, 390, 768, 1024, 1440, 1920) = 450 layout combinations. No detected horizontal overflow, missing images, invalid internal routes or application page errors. Evidence: qa/full-site/results.json.
+- Final Services-only illustration adjustment rechecked at 320, 390, 768 and 1440 in all three languages (12 additional combinations); only clip-path changed after the full matrix.
+- Navigation, direct child routes, breadcrumbs, Back/Forward, legacy Chinese aliases, same-route filter history, keyboard tabs, pricing selection, quote preselection, search and empty states passed.
+- Three-language switching and form-value preservation passed; Vietnamese is not offered and a saved unsupported locale falls back safely.
+- Form validation and captured mailto draft generation passed. No test enquiry was sent. The approved form opens an email draft and does not claim server delivery.
+- Mobile menu, Escape focus, FAQ expansion, unknown-route view and reduced-motion behavior passed.
+- Reviewer found a legacy alias locale issue on browser Back; it was fixed and covered by a browser regression. No unresolved blocking review findings.
 
-Independent code review found an unsafe inherited-property locale lookup; fixed with an own-property allowlist and regression coverage. Minor reduced-motion and Escape-focus issues were also corrected. No remaining P0/P1/P2 findings.
+## Media and external resources
 
-Deployment smoke test: https://bexceed-new-website.vercel.app/ loads the complete homepage and plays the 10-second hero. The carousel's mandatory snap initially removed its leading gutter; explicit responsive scroll padding now preserves it (browser check at 1280px: scrollLeft 0, first card x 96, matching the content container). A follow-up production build passed.
+Evidence: qa/full-site/media-checks.json. The homepage hero (10 seconds) and adviser video (6 seconds) played at 390 and 1440 widths. Hero pause button remains removed; adviser pause/resume works. Reduced motion suppresses autoplay. Mobile Services image transfer measured approximately 0.95 MB; interior images use responsive WebP exports and intrinsic dimensions.
 
-This release is the homepage. Separate interior pages and confirmed fee amounts remain future work by agreement. The contact form opens an email draft in the visitor's mail client, as expressly approved; it does not claim that a message has been sent.
+The 11 original video references were checked against their publishers' YouTube metadata. Seven remain publicly available with local original thumbnails. Four unavailable originals are represented by honest official-resource cards rather than broken players. One representative original RBA embed was actually played and reached 0:03; playback of all seven was not individually claimed. The deterministic browser interaction test separately verifies click-to-load and 16:9 player layout. Third-party availability can change.
 
----
+Historical article dates are retained, and old SMSF member limits are not presented as current guidance. See docs/content-coverage.md and ASSET_LICENSES.md for sources.
 
-# Header and footer logo contrast — design QA
+## Agreed content/service limits
 
-**Final result: passed**
+Fees remain TBC until the client supplies amounts. Contact delivery remains the approved email-draft approach. These do not represent unfinished site pages. Source website and Notion content were not modified.
 
-## Scope and evidence
+## Release
 
-The approved reference is `design/logo-contrast-concept/header-footer-concept.png`. The comparison covers the header and footer only; the reference is an AI concept combining these regions into one 1504 × 1045 image, while the implementation screenshots use the existing site at a 1280 × 720 viewport: `qa/logo-header-footer/header.jpg` and `qa/logo-header-footer/footer.jpg`. The existing hero video, hero copy, real business details, navigation links and footer information are intentionally retained rather than replacing them with the concept's generated placeholders.
-
-## Checks
-
-- Typography and layout: original site fonts and navigation hierarchy retained; the header's dark text and footer's logo panel are legible without clipping.
-- Colour and states: pale header and dark blue navigation at the top, on scroll and when the mobile menu is open; footer retains the dark blue background with a light logo panel; hover and focus treatments remain visible.
-- Asset fidelity: both logo instances use the exact customer-supplied PNG, with no CSS colour filter; the original and deployed asset SHA-256 hashes match.
-- Content: existing correct Adelaide contact information and current website copy are preserved; the concept image's fabricated contact details were not adopted.
-- Responsive and interactions: 390 px mobile header and expanded menu checked with no document overflow; language chooser opened and switched to Simplified Chinese, and the logo remained unfiltered.
-
-No outstanding P0, P1 or P2 findings within the requested header/footer scope.
-
----
-
-# Homepage pricing section — design QA
-
-**Final result: passed**
-
-Compared the approved `design/pricing-concept/pricing-section-concept.png` against `qa/pricing-layout/desktop.jpg`, and checked `qa/pricing-layout/mobile.jpg`. The reference combines a larger pricing photo with the list; the user explicitly requested the existing Why Bexceed section's container and image dimensions, so the implementation follows those dimensions instead.
-
-- Layout and imagery: the desktop pricing and Why Bexceed containers are both 1088 px at a 1280 px viewport; both image regions are 520 × 522 px. On a 390 px viewport both are 350 × 330 px. The photo is a separately generated interpretation of the approved concept and is cropped with `object-fit: cover`.
-- Typography and colour: the site fonts, navy headings, pale-blue surface, cyan link and amber selected indicator/button are retained. All three service rows remain legible and fees remain unconfirmed.
-- Content and interactions: the category tabs change the service list and support keyboard navigation; the complete existing pricing dialog still displays all nine service cards; the quote link preselects the active category.
-- Responsive: all four languages and all three categories were checked at 320 px with no horizontal overflow or clipped tab/row text; the 390 px mobile layout stacks the image after the pricing content.
-
-No outstanding P0, P1 or P2 findings within the requested homepage pricing scope.
+Local implementation and QA passed. GitHub/Vercel release verification is recorded separately after publishing.

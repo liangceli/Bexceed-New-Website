@@ -1,4 +1,4 @@
-export const languages = { en: ['English','EN','en-AU'], 'zh-CN': ['简体中文','简体','zh-CN'], 'zh-TW': ['繁體中文','繁體','zh-TW'], vi: ['Tiếng Việt','VI','vi'] };
+export const languages = { en: ['English','EN','en-AU'], 'zh-CN': ['简体中文','简体','zh-CN'], 'zh-TW': ['繁體中文','繁體','zh-TW'] };
 
 const en = {
   nav:['Home','Services','Pricing','About','Insights'], contact:'Contact us', explore:'Explore services', skip:'Skip to content', menu:'Menu', close:'Close', language:'Choose language', pause:'Pause video', play:'Play video',

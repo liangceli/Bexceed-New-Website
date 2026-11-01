@@ -1,0 +1,505 @@
+{
+  "about-adviser.png": {
+    "src": "/assets/pages/web/about-adviser.webp",
+    "width": 1416,
+    "height": 1111,
+    "srcset": "/assets/pages/web/about-adviser-480.webp 480w, /assets/pages/web/about-adviser-960.webp 960w, /assets/pages/web/about-adviser.webp 1416w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/about-adviser-480.webp",
+        "width": 480,
+        "bytes": 23504
+      },
+      {
+        "src": "/assets/pages/web/about-adviser-960.webp",
+        "width": 960,
+        "bytes": 58476
+      },
+      {
+        "src": "/assets/pages/web/about-adviser.webp",
+        "width": 1416,
+        "bytes": 98590
+      }
+    ]
+  },
+  "about-hero.png": {
+    "src": "/assets/pages/web/about-hero.webp",
+    "width": 1920,
+    "height": 768,
+    "srcset": "/assets/pages/web/about-hero-480.webp 480w, /assets/pages/web/about-hero-960.webp 960w, /assets/pages/web/about-hero-1440.webp 1440w, /assets/pages/web/about-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/about-hero-480.webp",
+        "width": 480,
+        "bytes": 16274
+      },
+      {
+        "src": "/assets/pages/web/about-hero-960.webp",
+        "width": 960,
+        "bytes": 47186
+      },
+      {
+        "src": "/assets/pages/web/about-hero-1440.webp",
+        "width": 1440,
+        "bytes": 81142
+      },
+      {
+        "src": "/assets/pages/web/about-hero.webp",
+        "width": 1920,
+        "bytes": 118680
+      }
+    ]
+  },
+  "about-icons.png": {
+    "src": "/assets/pages/web/about-icons.webp",
+    "width": 1280,
+    "height": 464,
+    "srcset": "",
+    "variants": [
+      {
+        "src": "/assets/pages/web/about-icons.webp",
+        "width": 1280,
+        "bytes": 81890
+      }
+    ]
+  },
+  "article-sharing.jpg": {
+    "src": "/assets/pages/web/article-sharing.webp",
+    "width": 940,
+    "height": 627,
+    "srcset": "/assets/pages/web/article-sharing-480.webp 480w, /assets/pages/web/article-sharing.webp 940w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/article-sharing-480.webp",
+        "width": 480,
+        "bytes": 11840
+      },
+      {
+        "src": "/assets/pages/web/article-sharing.webp",
+        "width": 940,
+        "bytes": 26216
+      }
+    ]
+  },
+  "article-smsf.jpg": {
+    "src": "/assets/pages/web/article-smsf.webp",
+    "width": 574,
+    "height": 335,
+    "srcset": "/assets/pages/web/article-smsf-480.webp 480w, /assets/pages/web/article-smsf.webp 574w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/article-smsf-480.webp",
+        "width": 480,
+        "bytes": 22116
+      },
+      {
+        "src": "/assets/pages/web/article-smsf.webp",
+        "width": 574,
+        "bytes": 30358
+      }
+    ]
+  },
+  "article-stp.png": {
+    "src": "/assets/pages/web/article-stp.webp",
+    "width": 1535,
+    "height": 902,
+    "srcset": "/assets/pages/web/article-stp-480.webp 480w, /assets/pages/web/article-stp-960.webp 960w, /assets/pages/web/article-stp-1440.webp 1440w, /assets/pages/web/article-stp.webp 1535w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/article-stp-480.webp",
+        "width": 480,
+        "bytes": 19242
+      },
+      {
+        "src": "/assets/pages/web/article-stp-960.webp",
+        "width": 960,
+        "bytes": 40940
+      },
+      {
+        "src": "/assets/pages/web/article-stp-1440.webp",
+        "width": 1440,
+        "bytes": 61156
+      },
+      {
+        "src": "/assets/pages/web/article-stp.webp",
+        "width": 1535,
+        "bytes": 66978
+      }
+    ]
+  },
+  "article-xero.png": {
+    "src": "/assets/pages/web/article-xero.webp",
+    "width": 925,
+    "height": 476,
+    "srcset": "/assets/pages/web/article-xero-480.webp 480w, /assets/pages/web/article-xero.webp 925w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/article-xero-480.webp",
+        "width": 480,
+        "bytes": 5500
+      },
+      {
+        "src": "/assets/pages/web/article-xero.webp",
+        "width": 925,
+        "bytes": 12162
+      }
+    ]
+  },
+  "business.png": {
+    "src": "/assets/pages/web/business.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcset": "/assets/pages/web/business-480.webp 480w, /assets/pages/web/business-960.webp 960w, /assets/pages/web/business-1440.webp 1440w, /assets/pages/web/business.webp 1448w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/business-480.webp",
+        "width": 480,
+        "bytes": 38546
+      },
+      {
+        "src": "/assets/pages/web/business-960.webp",
+        "width": 960,
+        "bytes": 101828
+      },
+      {
+        "src": "/assets/pages/web/business-1440.webp",
+        "width": 1440,
+        "bytes": 178096
+      },
+      {
+        "src": "/assets/pages/web/business.webp",
+        "width": 1448,
+        "bytes": 181810
+      }
+    ]
+  },
+  "contact-about.png": {
+    "src": "/assets/pages/web/contact-about.webp",
+    "width": 1774,
+    "height": 887,
+    "srcset": "/assets/pages/web/contact-about-480.webp 480w, /assets/pages/web/contact-about-960.webp 960w, /assets/pages/web/contact-about-1440.webp 1440w, /assets/pages/web/contact-about.webp 1774w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/contact-about-480.webp",
+        "width": 480,
+        "bytes": 21240
+      },
+      {
+        "src": "/assets/pages/web/contact-about-960.webp",
+        "width": 960,
+        "bytes": 57750
+      },
+      {
+        "src": "/assets/pages/web/contact-about-1440.webp",
+        "width": 1440,
+        "bytes": 101284
+      },
+      {
+        "src": "/assets/pages/web/contact-about.webp",
+        "width": 1774,
+        "bytes": 135966
+      }
+    ]
+  },
+  "contact-insights.png": {
+    "src": "/assets/pages/web/contact-insights.webp",
+    "width": 1774,
+    "height": 887,
+    "srcset": "/assets/pages/web/contact-insights-480.webp 480w, /assets/pages/web/contact-insights-960.webp 960w, /assets/pages/web/contact-insights-1440.webp 1440w, /assets/pages/web/contact-insights.webp 1774w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/contact-insights-480.webp",
+        "width": 480,
+        "bytes": 26718
+      },
+      {
+        "src": "/assets/pages/web/contact-insights-960.webp",
+        "width": 960,
+        "bytes": 73354
+      },
+      {
+        "src": "/assets/pages/web/contact-insights-1440.webp",
+        "width": 1440,
+        "bytes": 130944
+      },
+      {
+        "src": "/assets/pages/web/contact-insights.webp",
+        "width": 1774,
+        "bytes": 176774
+      }
+    ]
+  },
+  "contact-pricing.png": {
+    "src": "/assets/pages/web/contact-pricing.webp",
+    "width": 1774,
+    "height": 887,
+    "srcset": "/assets/pages/web/contact-pricing-480.webp 480w, /assets/pages/web/contact-pricing-960.webp 960w, /assets/pages/web/contact-pricing-1440.webp 1440w, /assets/pages/web/contact-pricing.webp 1774w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/contact-pricing-480.webp",
+        "width": 480,
+        "bytes": 11952
+      },
+      {
+        "src": "/assets/pages/web/contact-pricing-960.webp",
+        "width": 960,
+        "bytes": 29506
+      },
+      {
+        "src": "/assets/pages/web/contact-pricing-1440.webp",
+        "width": 1440,
+        "bytes": 48332
+      },
+      {
+        "src": "/assets/pages/web/contact-pricing.webp",
+        "width": 1774,
+        "bytes": 62054
+      }
+    ]
+  },
+  "contact-services.png": {
+    "src": "/assets/pages/web/contact-services.webp",
+    "width": 1774,
+    "height": 887,
+    "srcset": "/assets/pages/web/contact-services-480.webp 480w, /assets/pages/web/contact-services-960.webp 960w, /assets/pages/web/contact-services-1440.webp 1440w, /assets/pages/web/contact-services.webp 1774w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/contact-services-480.webp",
+        "width": 480,
+        "bytes": 35616
+      },
+      {
+        "src": "/assets/pages/web/contact-services-960.webp",
+        "width": 960,
+        "bytes": 86150
+      },
+      {
+        "src": "/assets/pages/web/contact-services-1440.webp",
+        "width": 1440,
+        "bytes": 140046
+      },
+      {
+        "src": "/assets/pages/web/contact-services.webp",
+        "width": 1774,
+        "bytes": 178172
+      }
+    ]
+  },
+  "individuals.png": {
+    "src": "/assets/pages/web/individuals.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcset": "/assets/pages/web/individuals-480.webp 480w, /assets/pages/web/individuals-960.webp 960w, /assets/pages/web/individuals-1440.webp 1440w, /assets/pages/web/individuals.webp 1448w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/individuals-480.webp",
+        "width": 480,
+        "bytes": 37146
+      },
+      {
+        "src": "/assets/pages/web/individuals-960.webp",
+        "width": 960,
+        "bytes": 94726
+      },
+      {
+        "src": "/assets/pages/web/individuals-1440.webp",
+        "width": 1440,
+        "bytes": 164374
+      },
+      {
+        "src": "/assets/pages/web/individuals.webp",
+        "width": 1448,
+        "bytes": 165818
+      }
+    ]
+  },
+  "insights-hero.png": {
+    "src": "/assets/pages/web/insights-hero.webp",
+    "width": 1920,
+    "height": 768,
+    "srcset": "/assets/pages/web/insights-hero-480.webp 480w, /assets/pages/web/insights-hero-960.webp 960w, /assets/pages/web/insights-hero-1440.webp 1440w, /assets/pages/web/insights-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/insights-hero-480.webp",
+        "width": 480,
+        "bytes": 14972
+      },
+      {
+        "src": "/assets/pages/web/insights-hero-960.webp",
+        "width": 960,
+        "bytes": 45624
+      },
+      {
+        "src": "/assets/pages/web/insights-hero-1440.webp",
+        "width": 1440,
+        "bytes": 81714
+      },
+      {
+        "src": "/assets/pages/web/insights-hero.webp",
+        "width": 1920,
+        "bytes": 120764
+      }
+    ]
+  },
+  "insights-media.png": {
+    "src": "/assets/pages/web/insights-media.webp",
+    "width": 1672,
+    "height": 941,
+    "srcset": "/assets/pages/web/insights-media-480.webp 480w, /assets/pages/web/insights-media-960.webp 960w, /assets/pages/web/insights-media-1440.webp 1440w, /assets/pages/web/insights-media.webp 1672w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/insights-media-480.webp",
+        "width": 480,
+        "bytes": 22708
+      },
+      {
+        "src": "/assets/pages/web/insights-media-960.webp",
+        "width": 960,
+        "bytes": 57046
+      },
+      {
+        "src": "/assets/pages/web/insights-media-1440.webp",
+        "width": 1440,
+        "bytes": 92362
+      },
+      {
+        "src": "/assets/pages/web/insights-media.webp",
+        "width": 1672,
+        "bytes": 109552
+      }
+    ]
+  },
+  "pricing-hero.png": {
+    "src": "/assets/pages/web/pricing-hero.webp",
+    "width": 1920,
+    "height": 768,
+    "srcset": "/assets/pages/web/pricing-hero-480.webp 480w, /assets/pages/web/pricing-hero-960.webp 960w, /assets/pages/web/pricing-hero-1440.webp 1440w, /assets/pages/web/pricing-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/pricing-hero-480.webp",
+        "width": 480,
+        "bytes": 14986
+      },
+      {
+        "src": "/assets/pages/web/pricing-hero-960.webp",
+        "width": 960,
+        "bytes": 45332
+      },
+      {
+        "src": "/assets/pages/web/pricing-hero-1440.webp",
+        "width": 1440,
+        "bytes": 80328
+      },
+      {
+        "src": "/assets/pages/web/pricing-hero.webp",
+        "width": 1920,
+        "bytes": 114448
+      }
+    ]
+  },
+  "pricing-scope.png": {
+    "src": "/assets/pages/web/pricing-scope.webp",
+    "width": 1122,
+    "height": 1402,
+    "srcset": "/assets/pages/web/pricing-scope-480.webp 480w, /assets/pages/web/pricing-scope-960.webp 960w, /assets/pages/web/pricing-scope.webp 1122w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/pricing-scope-480.webp",
+        "width": 480,
+        "bytes": 34942
+      },
+      {
+        "src": "/assets/pages/web/pricing-scope-960.webp",
+        "width": 960,
+        "bytes": 87680
+      },
+      {
+        "src": "/assets/pages/web/pricing-scope.webp",
+        "width": 1122,
+        "bytes": 107532
+      }
+    ]
+  },
+  "resource-icons.png": {
+    "src": "/assets/pages/web/resource-icons.webp",
+    "width": 1280,
+    "height": 427,
+    "srcset": "",
+    "variants": [
+      {
+        "src": "/assets/pages/web/resource-icons.webp",
+        "width": 1280,
+        "bytes": 62988
+      }
+    ]
+  },
+  "service-icons.png": {
+    "src": "/assets/pages/web/service-icons.webp",
+    "width": 1254,
+    "height": 1254,
+    "srcset": "",
+    "variants": [
+      {
+        "src": "/assets/pages/web/service-icons.webp",
+        "width": 1254,
+        "bytes": 163960
+      }
+    ]
+  },
+  "services-hero.png": {
+    "src": "/assets/pages/web/services-hero.webp",
+    "width": 1920,
+    "height": 768,
+    "srcset": "/assets/pages/web/services-hero-480.webp 480w, /assets/pages/web/services-hero-960.webp 960w, /assets/pages/web/services-hero-1440.webp 1440w, /assets/pages/web/services-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/services-hero-480.webp",
+        "width": 480,
+        "bytes": 19322
+      },
+      {
+        "src": "/assets/pages/web/services-hero-960.webp",
+        "width": 960,
+        "bytes": 59040
+      },
+      {
+        "src": "/assets/pages/web/services-hero-1440.webp",
+        "width": 1440,
+        "bytes": 111222
+      },
+      {
+        "src": "/assets/pages/web/services-hero.webp",
+        "width": 1920,
+        "bytes": 166330
+      }
+    ]
+  },
+  "smsf.png": {
+    "src": "/assets/pages/web/smsf.webp",
+    "width": 1448,
+    "height": 1086,
+    "srcset": "/assets/pages/web/smsf-480.webp 480w, /assets/pages/web/smsf-960.webp 960w, /assets/pages/web/smsf-1440.webp 1440w, /assets/pages/web/smsf.webp 1448w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/smsf-480.webp",
+        "width": 480,
+        "bytes": 41036
+      },
+      {
+        "src": "/assets/pages/web/smsf-960.webp",
+        "width": 960,
+        "bytes": 120026
+      },
+      {
+        "src": "/assets/pages/web/smsf-1440.webp",
+        "width": 1440,
+        "bytes": 208018
+      },
+      {
+        "src": "/assets/pages/web/smsf.webp",
+        "width": 1448,
+        "bytes": 211492
+      }
+    ]
+  }
+}
