@@ -82,18 +82,6 @@ html[lang^=zh] body{font-family:'Source Sans 3','Microsoft YaHei','PingFang SC',
 @media(max-width:900px){.pricing-layout{grid-template-columns:1fr;gap:28px}.pricing .pricing-intro h2{font-size:34px}.pricing-photo{height:440px}}
 @media(max-width:640px){.pricing{padding:38px 0}.pricing-layout{gap:28px}.pricing .pricing-intro h2{font-size:30px;line-height:1.22}.pricing .price-tabs button,.pricing .price-tabs button:first-child{font-size:12px;min-height:45px;padding:9px 5px}.pricing-row h3{font-size:17px}.pricing-row p{font-size:15px}.pricing .pricing-bottom>p{margin:0}.pricing .pricing-bottom>.actions{gap:16px;margin-top:18px}.pricing-photo{height:330px}}
 
-/* Original professional marks remain in their supplied colours and proportions. */
-.credentials{background:#fff;border-bottom:1px solid #e7eff4}
-.credentials-inner{display:flex;align-items:center;gap:52px;padding-block:12px}
-.credentials h2{flex:0 0 230px;color:#194973;font:700 15px/1.4 'Source Sans 3',sans-serif;letter-spacing:.02em}
-.credentials-logos{flex:1;min-width:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;justify-items:center;gap:24px}
-.credentials-logos img{display:block;height:auto;max-width:100%;object-fit:contain}
-.credentials-logos .credential-cpa{width:142px}
-.credentials-logos .credential-ntaa{width:150px}
-.credentials-logos .credential-tpb{width:260px}
-@media(max-width:900px){.credentials-inner{gap:24px}.credentials h2{flex-basis:180px}.credentials-logos{gap:16px}}
-@media(max-width:640px){.credentials-inner{display:block;padding-block:20px}.credentials h2{text-align:center;font-size:14px;margin-bottom:12px}.credentials-logos{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}.credentials-logos .credential-cpa{width:132px}.credentials-logos .credential-ntaa{width:132px}.credentials-logos .credential-tpb{grid-column:1/-1;width:250px}}
-
 /* Lighten the contact panel so it transitions into the darker footer. */
 .contact-info{background:#e3f1f8;color:#194973}
 .contact-info>p{color:#355d7a}

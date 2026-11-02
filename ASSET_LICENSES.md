@@ -30,6 +30,14 @@ The adviser video uses a six-second excerpt of the consultation clip. The footag
 - Small interface controls: Phosphor Icons, MIT licence in `public/licenses/Phosphor-MIT.txt`. The four primary benefit illustrations are the custom raster assets described above.
 - Footer website icon: [Phosphor regular globe](https://github.com/phosphor-icons/core/blob/main/assets/regular/globe.svg), supplied unchanged under the same MIT licence. The footer uses the client's original CPA asset, not a generated approximation.
 
+## Credentials gallery — 2 November 2026
+
+The selected two-row gallery reuses the supplied CPA and NTAA images unchanged. The TPB seal is the client's `25691635_Colour_Portrait - Copy (2).jpg` from their original logo package; registration number 25691635 is displayed as accessible page text.
+
+The original [Xero Certified Advisor lockup](https://i0.wp.com/bexceed.com.au/wp-content/uploads/2018/02/xero-certified-advisor-bexceed.png) and company-formation diagram are reused from the client's old About page. The latter is a service illustration, not an ASIC-issued certification logo; its caption carries the original site's ASIC Registered Agent designation. Rights in these marks remain with their respective owners.
+
+The AFSL (SMSF) graphic is the previously approved generated Bexceed-style informational label, with the original wording unchanged. It is not a government-issued seal. The gallery adds no new licence-status or unrestricted-advice claim. Source research is retained in `design/credential-review-2026-11-02/research.md`.
+
 
 ## Interior page assets — approved 30 October 2026 concepts
 
