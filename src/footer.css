@@ -1,0 +1,58 @@
+/* Approved footer option 2: navigation left, CPA practice and contact details right. */
+#footer{background:#123d60;color:#f4f9fc}
+#footer .footer-layout{display:grid;grid-template-columns:.85fr 1fr 1.55fr;gap:48px;padding-block:78px 42px}
+#footer .footer-layout>div{min-width:0}
+#footer .footer-navigation{padding-top:12px}
+#footer h3{margin:0 0 24px;font:700 26px/1.3 'Source Sans 3',sans-serif;letter-spacing:0;color:inherit}
+#footer nav{display:grid;justify-items:start;gap:10px;font:400 22px/1.5 'Source Sans 3',sans-serif;color:inherit}
+#footer nav a,#footer .footer-language{display:flex;align-items:center;min-height:36px;text-align:start}
+#footer .footer-practice{border-left:1px solid #ffffff38;padding-left:60px}
+#footer .footer-cpa{display:block;width:240px;max-width:100%;height:auto}
+#footer .footer-company{margin:22px 0 20px;font:650 22px/1.3 'Source Sans 3',sans-serif;color:inherit}
+#footer .footer-details{display:grid;gap:10px;font:400 20px/1.45 'Source Sans 3',sans-serif}
+#footer .footer-details a{display:flex;align-items:flex-start;gap:20px;min-height:32px}
+#footer .footer-details span{min-width:0;overflow-wrap:anywhere}
+#footer .footer-details img{width:24px;height:24px;flex:0 0 24px;filter:brightness(0) invert(1);margin-top:3px}
+#footer .footer-legal{display:flex;align-items:center;justify-content:space-between;gap:28px;border-top:1px solid #ffffff38;padding-block:24px 30px}
+#footer .footer-legal p,#footer .footer-legal a{margin:0;font:400 13px/1.5 'Source Sans 3',sans-serif;color:inherit}
+#footer .footer-legal a{white-space:nowrap;text-decoration:underline;text-underline-offset:4px}
+#footer a,#footer .footer-language{transition:color .18s ease}
+#footer a:hover,#footer .footer-language:hover{color:#75d8ff}
+#footer a:focus-visible,#footer button:focus-visible{outline:2px solid #f3a50a;outline-offset:5px;border-radius:2px}
+@media(max-width:1200px){
+  #footer .footer-layout{grid-template-columns:.8fr 1fr 1.6fr;gap:32px;padding-top:64px}
+  #footer .footer-practice{padding-left:32px}
+  #footer h3{font-size:24px}
+  #footer nav{font-size:20px}
+  #footer .footer-company{font-size:21px}
+  #footer .footer-details{font-size:18px}
+  #footer .footer-details a{gap:14px}
+}
+@media(max-width:900px){
+  #footer .footer-layout{grid-template-columns:1fr 1.3fr;gap:40px;padding-block:48px 36px}
+  #footer .footer-navigation{padding-top:0}
+  #footer .footer-practice{grid-column:1/-1;border-left:0;border-top:1px solid #ffffff38;padding:32px 0 0}
+  #footer .footer-cpa{width:220px}
+  #footer .footer-company{max-width:560px}
+  #footer .footer-legal{flex-wrap:wrap;gap:14px 24px}
+  #footer .footer-legal p:nth-child(2){order:3;flex-basis:100%}
+}
+@media(max-width:600px){
+  #footer .footer-layout{grid-template-columns:.9fr 1.1fr;gap:32px 20px;padding-block:40px 30px}
+  #footer h3{font-size:21px;margin-bottom:16px}
+  #footer nav{font-size:17px;gap:6px;line-height:1.45}
+  #footer nav a,#footer .footer-language{min-height:40px}
+  #footer .footer-practice{padding-top:30px}
+  #footer .footer-cpa{width:200px}
+  #footer .footer-company{font-size:21px;margin-block:20px}
+  #footer .footer-details{font-size:17px;gap:8px}
+  #footer .footer-details a{min-height:40px;gap:16px;align-items:center}
+  #footer .footer-details a:first-child{align-items:flex-start}
+  #footer .footer-details img{width:22px;height:22px;flex-basis:22px;margin-top:0}
+  #footer .footer-details a:first-child img{margin-top:2px}
+  #footer .footer-legal{display:grid;gap:14px;padding-block:24px 28px}
+  #footer .footer-legal p:nth-child(2){order:0}
+  #footer .footer-legal p,#footer .footer-legal a{font-size:12px}
+  #footer .footer-legal a{justify-self:start;min-height:32px;display:flex;align-items:center}
+}
+@media(prefers-reduced-motion:reduce){#footer a,#footer .footer-language{transition:none}}

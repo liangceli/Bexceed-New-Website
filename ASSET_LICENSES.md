@@ -28,6 +28,7 @@ The adviser video uses a six-second excerpt of the consultation clip. The footag
 - Manrope: SIL Open Font License, supplied in `public/licenses/Manrope-OFL.txt`.
 - Source Sans 3: SIL Open Font License, supplied in `public/licenses/SourceSans3-OFL.txt`.
 - Small interface controls: Phosphor Icons, MIT licence in `public/licenses/Phosphor-MIT.txt`. The four primary benefit illustrations are the custom raster assets described above.
+- Footer website icon: [Phosphor regular globe](https://github.com/phosphor-icons/core/blob/main/assets/regular/globe.svg), supplied unchanged under the same MIT licence. The footer uses the client's original CPA asset, not a generated approximation.
 
 
 ## Interior page assets — approved 30 October 2026 concepts
