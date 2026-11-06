@@ -4,12 +4,14 @@ import './site.css';
 import './pages.css';
 import './footer.css';
 import './credentials.css';
+import './team-media.css';
 import { renderHome } from './home.js';
 import { resolveRoute, routeHref } from './routes.js';
 import { renderInner, bindInnerPage, contactImage, pageTitle, renderPriceRows } from './pages.js';
 import { content, languages, resolveLocale } from './content.js';
 import { createEnquiryMailto } from './enquiry.js';
 import { getInsights } from './insights.js';
+import { bindCredentialCarousel } from './credential-carousel.js';
 
 const app = document.querySelector('#app');
 const query = new URLSearchParams(location.search);
@@ -20,6 +22,7 @@ locale = resolveLocale(locale);
 let category=route.category||0;
 let firstRender = true;
 let videoObservers=[];
+let disposeCredentials=()=>{};
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const still = query.has('still');
 const icon = (name, className='') => `<img class="${className}" src="/assets/${name}.svg" alt="" aria-hidden="true">`;
@@ -38,6 +41,7 @@ function saveFields(){
   return form ? Object.fromEntries(new FormData(form)) : {};
 }
 function render(resetScroll=false){
+  disposeCredentials();
   videoObservers.forEach(observer=>observer.disconnect());videoObservers=[];
   const fields=saveFields();
   document.querySelectorAll('video').forEach(video=>video.pause());
@@ -64,6 +68,7 @@ function render(resetScroll=false){
   Object.entries(fields).forEach(([name,value])=>{const input=document.querySelector(`[name="${name}"]`);if(input){if(input.type==='checkbox')input.checked=true;else input.value=value;}});
   bindControls();
   bindInnerPage(locale);
+  disposeCredentials=bindCredentialCarousel();
   document.body.dataset.viewSearch=location.search;
   updateHeader();
   if(resetScroll)window.scrollTo({top:0,behavior:'instant'});else if(!firstRender)window.scrollTo({top:scroll,behavior:'instant'});

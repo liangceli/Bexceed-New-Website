@@ -501,5 +501,117 @@
         "bytes": 211492
       }
     ]
+  },
+  "about-team-hero.png": {
+    "src": "/assets/pages/web/about-team-hero.webp",
+    "width": 1920,
+    "height": 640,
+    "srcset": "/assets/pages/web/about-team-hero-480.webp 480w, /assets/pages/web/about-team-hero-960.webp 960w, /assets/pages/web/about-team-hero-1440.webp 1440w, /assets/pages/web/about-team-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/about-team-hero-480.webp",
+        "width": 480,
+        "bytes": 14292
+      },
+      {
+        "src": "/assets/pages/web/about-team-hero-960.webp",
+        "width": 960,
+        "bytes": 38378
+      },
+      {
+        "src": "/assets/pages/web/about-team-hero-1440.webp",
+        "width": 1440,
+        "bytes": 70246
+      },
+      {
+        "src": "/assets/pages/web/about-team-hero.webp",
+        "width": 1920,
+        "bytes": 103374
+      }
+    ]
+  },
+  "services-team-hero.png": {
+    "src": "/assets/pages/web/services-team-hero.webp",
+    "width": 1920,
+    "height": 640,
+    "srcset": "/assets/pages/web/services-team-hero-480.webp 480w, /assets/pages/web/services-team-hero-960.webp 960w, /assets/pages/web/services-team-hero-1440.webp 1440w, /assets/pages/web/services-team-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/services-team-hero-480.webp",
+        "width": 480,
+        "bytes": 17318
+      },
+      {
+        "src": "/assets/pages/web/services-team-hero-960.webp",
+        "width": 960,
+        "bytes": 48692
+      },
+      {
+        "src": "/assets/pages/web/services-team-hero-1440.webp",
+        "width": 1440,
+        "bytes": 84768
+      },
+      {
+        "src": "/assets/pages/web/services-team-hero.webp",
+        "width": 1920,
+        "bytes": 126424
+      }
+    ]
+  },
+  "pricing-team-hero.png": {
+    "src": "/assets/pages/web/pricing-team-hero.webp",
+    "width": 1920,
+    "height": 640,
+    "srcset": "/assets/pages/web/pricing-team-hero-480.webp 480w, /assets/pages/web/pricing-team-hero-960.webp 960w, /assets/pages/web/pricing-team-hero-1440.webp 1440w, /assets/pages/web/pricing-team-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/pricing-team-hero-480.webp",
+        "width": 480,
+        "bytes": 13604
+      },
+      {
+        "src": "/assets/pages/web/pricing-team-hero-960.webp",
+        "width": 960,
+        "bytes": 39106
+      },
+      {
+        "src": "/assets/pages/web/pricing-team-hero-1440.webp",
+        "width": 1440,
+        "bytes": 71850
+      },
+      {
+        "src": "/assets/pages/web/pricing-team-hero.webp",
+        "width": 1920,
+        "bytes": 109702
+      }
+    ]
+  },
+  "insights-team-hero.png": {
+    "src": "/assets/pages/web/insights-team-hero.webp",
+    "width": 1920,
+    "height": 640,
+    "srcset": "/assets/pages/web/insights-team-hero-480.webp 480w, /assets/pages/web/insights-team-hero-960.webp 960w, /assets/pages/web/insights-team-hero-1440.webp 1440w, /assets/pages/web/insights-team-hero.webp 1920w",
+    "variants": [
+      {
+        "src": "/assets/pages/web/insights-team-hero-480.webp",
+        "width": 480,
+        "bytes": 12546
+      },
+      {
+        "src": "/assets/pages/web/insights-team-hero-960.webp",
+        "width": 960,
+        "bytes": 31142
+      },
+      {
+        "src": "/assets/pages/web/insights-team-hero-1440.webp",
+        "width": 1440,
+        "bytes": 53666
+      },
+      {
+        "src": "/assets/pages/web/insights-team-hero.webp",
+        "width": 1920,
+        "bytes": 74722
+      }
+    ]
   }
 }

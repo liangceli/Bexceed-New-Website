@@ -1,0 +1,15 @@
+/* Approved photographic banners; unrelated page heroes retain their styling. */
+.inner-hero--team::after{background:linear-gradient(90deg,rgba(16,58,89,.97) 0%,rgba(16,58,89,.92) 25%,rgba(16,58,89,.73) 43%,rgba(16,58,89,.18) 67%,rgba(16,58,89,.03) 100%)}
+.inner-page .inner-hero--team .inner-hero-copy{max-width:36.875rem}
+.inner-hero--team h1{font-size:clamp(2.2rem,3.4vw,3.6rem)}
+.inner-hero--team .inner-hero-copy>p:not(.eyebrow){font-size:1.25rem;max-width:34rem}
+.inner-hero--team .inner-hero-image{object-position:67% center}
+@media(min-width:75.0625em){.inner-page[data-page] .inner-hero--team{min-height:35rem}}
+@media(max-width:43.75em){
+ .inner-hero--team{display:flex;flex-direction:column;min-height:0;background:#194973}
+ .inner-hero--team::after{display:none}
+ .inner-hero--team>.container{order:0}
+ .inner-page .inner-hero--team .inner-hero-copy{max-width:100%;padding-block:1.75rem 2rem}
+ .inner-hero--team .inner-hero-copy>p:not(.eyebrow){font-size:1.125rem}
+ .inner-page .inner-hero--team .inner-hero-image[width][height]{position:relative;inset:auto;order:1;z-index:0;display:block;width:100%;height:auto;aspect-ratio:2.2;object-fit:cover;object-position:right center;opacity:1}
+}
