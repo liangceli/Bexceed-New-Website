@@ -1,0 +1,154 @@
+{
+  "date": "2026-11-06",
+  "provider": "Google Flow web UI",
+  "projectUrl": "https://flow.google.com/project/9beb77d6-7f94-4699-8795-f2a3c58db427",
+  "creditsObservedBeforeGeneration": 50,
+  "creditsRefreshLabel": "Credits refresh daily at 11:34 am",
+  "availableModelsObserved": [
+    "Omni 1.1 Flash",
+    "Veo 3.1 - Lite",
+    "Veo 3.1 - Fast",
+    "Veo 3.1 - Quality"
+  ],
+  "selectedSettings": {
+    "model": "Omni 1.1 Flash",
+    "mode": "Frames",
+    "aspectRatio": "16:9",
+    "resolution": "720p",
+    "durationSeconds": 6,
+    "outputCount": 1,
+    "quotedCredits": 10,
+    "nativeFrameRate": 24
+  },
+  "rightsConsent": "User explicitly approved clicking I agree in Flow's Rights to use this image dialog during this chat.",
+  "shots": [
+    {
+      "status": "Downloaded and accepted",
+      "actualCredits": 10,
+      "name": "adviser-01-preparation",
+      "key": "preparation",
+      "taskId": "eb3b98d3-e82d-4ecf-b1b7-bdec0a590a48",
+      "balanceAfter": 40,
+      "review": "Played in Flow; start/middle/end and 12 half-second samples checked. C retains fuller build and glasses, D retains hijab and face. Reframing near the beginning is avoided using 2.25–5.45 seconds. Hands, keyboard, pen and checklist coherent.",
+      "firstFrame": "../adviser-01-preparation.png",
+      "prompt": "Animate the supplied image as the exact first frame: two fictional accounting advisers quietly preparing a client action checklist at their own office desk. The stocky Asian man on the left makes a few gentle keystrokes, then pauses to read his laptop. The woman on the right, in the same dusty blue-teal hijab, makes one small check mark with her pen and quietly reviews the sheet. Both stay seated, focused on their work; no conversation or performance. Preserve their exact faces, age, fuller body proportions, hair, glasses, hijab, clothing, people count and room layout. Keep laptop, paper, calculator, notebook and cup stable. Natural real-time movement, subtle breathing and blinking, fixed camera, documentary realism. No new people, text, logos, graphics, transitions, face morphing, exaggerated gestures or staged smiles. No music, narration or dialogue.",
+      "sourceFile": "adviser-01-preparation-source.mp4",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "sourceVideoSeconds": 6,
+      "sourceFramesPerSecond": 24
+    },
+    {
+      "status": "Downloaded and accepted",
+      "actualCredits": 10,
+      "name": "adviser-02-follow-up",
+      "key": "followUp",
+      "taskId": "58131a28-6f39-433f-831c-927c4d8d876a",
+      "balanceAfter": 30,
+      "review": "Played in Flow; start/middle/end and 12 half-second samples checked. B face, hair and stubble stable; phone and paper coherent; subtle listening/nod motion. Final uses 1–4 seconds.",
+      "firstFrame": "../adviser-02-follow-up.png",
+      "prompt": "One continuous six-second shot. Animate this supplied first frame, preserving the same fictional male adviser, exact face, short brown hair, stubble, age, pale-blue shirt and ordinary office. He keeps the same smartphone at the same ear, quietly listens while looking down at the paper, then gives one small natural nod. His other hand keeps holding the same sheet, with only subtle movement. Minimal lip movement, no dialogue or music needed. Fixed camera, same framing for the whole take, no cuts or angle changes. Preserve realistic fingers, phone shape, document, body proportions and room layout. Normal-speed documentary movement, subtle blinking and breathing. No extra people, text, logos, graphics, morphing or exaggerated smile.",
+      "sourceFile": "adviser-02-follow-up-source.mp4",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "sourceVideoSeconds": 6,
+      "sourceFramesPerSecond": 24
+    },
+    {
+      "status": "Rejected by Flow policy; no output; not retried",
+      "actualCredits": 0,
+      "name": "hero-01-family-meeting",
+      "key": "family",
+      "refundedCredits": 10,
+      "review": "Flow reported: This prompt might violate our policies about generating prominent people. Refund observed. No altered prompt/model retry attempted; required family shot remains incomplete.",
+      "firstFrame": "../hero-01-family-meeting.png",
+      "prompt": "A single continuous six-second documentary shot, using the supplied image as the first frame. Preserve all SEVEN people exactly: the two female advisers on the left, the grandparents in the middle, the adult couple and the child on the right. Keep the advisers exact faces, shoulder-length hair and dusty blue-teal hijab; preserve every client face, age, clothing and seating position. The adviser at far left makes one small gentle open-hand gesture above the paper chart as she explains; the other adults listen with only natural blinking and small head movements. The child keeps quietly drawing in the existing notebook. Most people remain still. Preserve hands, glasses, paper, food, bag and laptop. Fixed wide camera, same composition, no cuts, no new people or objects, no face morphing, graphics, new text, logos, dramatic gestures or staged smiles. Natural real-time human movement. No narration, music or distinct dialogue."
+    },
+    {
+      "status": "Downloaded and accepted",
+      "actualCredits": 10,
+      "name": "hero-02-shop-visit",
+      "key": "shop",
+      "taskId": "047ce1a5-503f-4299-a61b-0fb64d55fcca",
+      "balanceAfter": 20,
+      "review": "Played in Flow; start/middle/end and 12 half-second samples checked. Four adults retained, B and C consistent, C full build and glasses retained; owner gestures mildly, tablet and notebook stable.",
+      "firstFrame": "../hero-02-shop-visit.png",
+      "prompt": "Animate the supplied first frame as one continuous six-second natural documentary shot in this neighbourhood produce shop. Exactly these four adults, same faces, ages, body proportions, hair, stubble, glasses and clothing. The woman owner in the green apron makes one small open-hand gesture while explaining her business. Her partner listens. The pale-blue-shirt adviser holds his tablet steadily and gives one subtle attentive nod. The stocky Asian adviser with glasses and charcoal cardigan keeps his full body build, holding the notebook steady as he briefly looks up from it towards the owner. No page turning. Keep vegetables, crates, checkout terminal, shelves and all objects stable. Fixed medium-wide camera, no cuts or camera angle changes, real-time movement with subtle breathing and blinking. No new people, graphics, text, logos, facial morphing or exaggerated gestures. No music, voice-over or distinct dialogue.",
+      "sourceFile": "hero-02-shop-visit-source.mp4",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "sourceVideoSeconds": 6,
+      "sourceFramesPerSecond": 24
+    },
+    {
+      "status": "Downloaded and accepted",
+      "actualCredits": 10,
+      "name": "hero-03-daily-bookkeeping",
+      "key": "florist",
+      "taskId": "91ab5aa5-6d37-4ce8-9a93-a050321496a6",
+      "balanceAfter": 10,
+      "review": "Played in Flow; start/middle/end and 12 half-second samples checked. A identity stable; three women retained, hand gesture and paper coherent, plain laptop back maintained; background bouquet wrapping small and natural.",
+      "firstFrame": "../hero-03-daily-bookkeeping.png",
+      "prompt": "Animate this exact first frame into a single continuous six-second documentary shot in the small family flower shop. Exactly these three women with the same faces, ages, body proportions, hair and clothes. The Chinese adviser in the navy jacket completes one gentle small pointing gesture towards the existing laptop keyboard area, then relaxes her hand on the desk. The florist holding the receipt follows the gesture and gives a slight nod, keeping the paper stable. The woman in the background makes one small adjustment to the wrapping around her existing bouquet. Preserve the laptop physical shape and plain unmarked rear lid, receipt, hands, cup, flowers, twine and room layout. Fixed camera, same composition throughout, no cuts or angle changes. Natural real-time movement, subtle blinking and breathing. No new people, text, charts, logos, face morphing, exaggerated gestures, music or narration.",
+      "sourceFile": "hero-03-daily-bookkeeping-source.mp4",
+      "sourceWidth": 1280,
+      "sourceHeight": 720,
+      "sourceVideoSeconds": 6,
+      "sourceFramesPerSecond": 24
+    }
+  ],
+  "websiteIntegration": {
+    "adviser": "public/assets/adviser-consultation.mp4 and adviser-consultation.webp replaced; src/adviser-video.css preserves full 16:9 composition; imported by src/home.js",
+    "hero": "public/assets/hero-meeting.mp4 and hero-meeting-poster.webp replaced with the approved full 1280x720 two-scene film. src/hero-video.css preserves faces in desktop top-aligned crop and full 16:9 composition above copy on screens <=900px. Hero now pauses outside viewport.",
+    "protectedSideChatFiles": "Not edited by this video task",
+    "responsiveChecks": "responsive-checks.json",
+    "limitations": [
+      "Viewport checks are browser emulation, not physical iOS/Android device tests",
+      "Original family scene rejected by Flow; user explicitly approved using the two-scene hero instead"
+    ]
+  },
+  "creditsObservedAfterGeneration": 10,
+  "netCreditsUsed": 40,
+  "purchaseOrPaidApiUsed": false,
+  "edits": {
+    "adviser": {
+      "file": "adviser-final.mp4",
+      "poster": "adviser-poster.webp",
+      "durationSeconds": 6,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "transitionSeconds": 0.2,
+      "sourceNative720p": true
+    },
+    "heroAlternative": {
+      "file": "hero-alternative-master-720p.mp4",
+      "poster": "hero-alternative-mobile-poster.webp",
+      "durationSeconds": 10,
+      "width": 1280,
+      "height": 720,
+      "fps": 30,
+      "codec": "H.264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "transitionSeconds": 0.2,
+      "status": "User approved replacing homepage Hero with this two-scene edit",
+      "desktopCrop": "Derivative generated for evaluation only; full 16:9 master is the review output to preserve heads"
+    }
+  },
+  "userApprovedTwoSceneHero": true,
+  "validation": {
+    "build": "npm run build passed",
+    "unitTests": "npm test: 8 passed",
+    "adviserResponsive": "responsive-checks.json",
+    "heroResponsive": "hero-responsive-checks.json",
+    "posterFallback": true,
+    "offscreenPause": true,
+    "manualAdviserPauseResume": true
+  }
+}

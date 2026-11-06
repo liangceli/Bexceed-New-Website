@@ -1,0 +1,46 @@
+/* Keep heads inside the wide desktop crop. The native film is 1280 × 720. */
+.hero .hero-photo,
+.hero .hero-video,
+.hero.has-video .hero-video {
+  object-position: center top;
+}
+.hero .hero-shade {
+  opacity: 1;
+}
+
+/* A portrait cover crop would remove the advisers. Show the complete scene
+   above the headline on small screens, with the same navy and gold palette. */
+@media (max-width: 900px) {
+  .hero {
+    --hero-header-offset: 5.25rem;
+    height: auto;
+    padding-top: var(--hero-header-offset);
+    background: #10304d;
+  }
+  .hero::before {
+    content: '';
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .hero .hero-photo,
+  .hero .hero-video,
+  .hero.has-video .hero-video {
+    top: var(--hero-header-offset);
+    left: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    object-position: center;
+  }
+  .hero .hero-photo { opacity: 1; }
+  .hero .hero-shade { display: none; }
+  .hero .hero-content {
+    height: auto;
+    padding-block: 2.25rem 2.75rem;
+  }
+}
+@media (max-width: 640px) {
+  .hero { --hero-header-offset: 4.875rem; }
+}
