@@ -7,7 +7,7 @@ const labels = {
 export function renderCredentials(locale) {
   const t=labels[locale]||labels.en;
   const items=[
-    ['tax','credential-tpb-seal.jpg','Tax Practitioners Board',361,351,t.tax,'25691635'],
+    ['tax','credential-tpb-seal.jpg','Tax Practitioners Board',361,351,t.tax],
     ['cpa','credential-cpa.png','CPA Australia',1584,693,t.cpa],
     ['company','credential-company-agent.png','Company Formation Services',150,150,t.company],
     ['afsl','credential-afsl.webp','',600,431,'AFSL (SMSF)'],

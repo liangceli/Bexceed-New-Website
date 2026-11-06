@@ -1,5 +1,6 @@
 import { renderCredentials } from './credentials.js';
 import { routeHref } from './routes.js';
+import './adviser-video.css';
 const resourceUrls=['https://www.ato.gov.au/','https://asic.gov.au/'];
 export function renderHome({t,locale,insights,category,firstRender,reducedMotion,icon,chevron,priceRows}) {
   return `<section class="hero ${firstRender&&!reducedMotion.matches?'entrance':''}" id="home"><img class="hero-photo" src="/assets/hero-meeting-poster.webp" alt="" fetchpriority="high" width="2010" height="782"><video id="hero-video" class="hero-video" muted loop playsinline preload="none" poster="/assets/hero-meeting-poster.webp" aria-label="${t.approach}"></video><div class="hero-shade" aria-hidden="true"></div><div class="container hero-content"><h1><span>${t.hero[0]}</span><span>${t.hero[1]}</span></h1><p class="hero-description">${t.heroText}</p><div class="actions"><a href="#contact" class="button">${t.contact}</a><a href="#services" class="button button-outline">${t.explore}</a></div></div></section>
