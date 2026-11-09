@@ -127,7 +127,7 @@ function bindControls(){
     const href=createEnquiryMailto(values,values.service===''?'':service,languages[locale][0]);
     feedback.replaceChildren();const p=document.createElement('p');p.textContent=t.draftReady;const a=document.createElement('a');a.href=href;a.textContent=t.openDraft;a.className='text-link';const small=document.createElement('p');small.textContent=t.emailAlternative;feedback.append(p,a,small);feedback.hidden=false;a.click();
   });
-  initialiseVideo('hero-video','/assets/hero-meeting.mp4?v=flow-20261106',true);
+  initialiseVideo('hero-video','/assets/hero-meeting.mp4?v=flow-20261109',true);
   initialiseVideo('adviser-video','/assets/adviser-consultation.mp4?v=flow-20261106',true);
 }
 function initialiseVideo(id,src,lazy){
