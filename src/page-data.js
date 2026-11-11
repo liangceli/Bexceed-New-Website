@@ -1,3 +1,4 @@
+import {clientVideoData} from './client-video-data.js';
 export const L=(en,zh)=>({en,zh});
 export const pageCopy={
   about:L('About Bexceed','关于 Bexceed'), services:L('Our services','我们的服务'), pricing:L('Pricing','服务费用'), insights:L('Insights','资讯'),
@@ -22,7 +23,9 @@ export const pageCopy={
   heroInsights:[L('Useful ideas.','实用的见解。'),L('Clearer decisions.','更清晰的决定。')],insightsLead:L('Articles and resources on tax, business, cloud accounting and SMSF.','有关税务、商业、云端会计与 SMSF 的文章和资源。'),browse:L('Browse insights','浏览资讯'),all:L('All insights','全部资讯'),search:L('Search insights','搜索资讯'),archive:L('From our article archive','历史文章'),read:L('Read article','阅读文章'),empty:L('No articles match your search. Try another word or category.','没有符合条件的文章，请尝试其他关键词或分类。'),clear:L('Clear filters','清除筛选'),
   archiveNote:L('Archive articles retain their original publication dates. Ask us how the information applies today.','历史文章保留原始发布日期。欢迎咨询这些信息今天如何适用于您的情况。'),watch:L('Watch. Learn. Explore.','观看、学习、探索。'),selectedVideos:L('Selected video resources','精选视频资源'),official:L('Useful official resources','实用官方资源'),resourcesLabel:L('Useful official resources','实用官方资源'),allVideos:L('Explore all videos','查看所有视频'),
   related:L('You may also find useful','您可能也需要'),relatedServices:L('Related services','相关服务'),backServices:L('All services','所有服务'),backInsights:L('All insights','所有资讯'),onThisPage:L('On this page','本页内容'),whatWeHelp:L('How we can help','我们如何帮助您'),nextStep:L('Your next step','您的下一步'),
-  videoTitle:L('Ideas worth watching.','值得一看的见解。'),videoLead:L('Selected videos from Bexceed’s original resource library, grouped by topic.','从 Bexceed 原有资源库中精选的视频，按主题分类。'),watchVideo:L('Play video','播放视频'),watchYoutube:L('Watch on YouTube','在 YouTube 观看'),videoNotice:L('These are archive resources from external publishers. Publication dates and original sources are shown; some information may have changed.','以下为外部发布方的历史资源，已标明日期及原始来源，部分信息可能已有变化。'),videoFallback:L('If the player is unavailable, use the original video link.','如果播放器无法使用，请通过原始视频链接观看。'),
+  videoTitle:L('Ideas worth watching.','值得一看的见解。'),videoLead:L('Selected videos on technology, business, the economy and retirement, alongside our resource archive.','精选科技、商业、经济及退休主题视频，并保留历史资源供参考。'),watchVideo:L('Play video','播放视频'),watchYoutube:L('Watch on YouTube','在 YouTube 观看'),videoNotice:L('Selected resources from external publishers. Check the source and publication date; commentary reflects the speakers’ views and is general information, not personal advice.','以下资源由外部机构发布。请留意来源和发布日期；评论代表讲者观点，内容为一般信息，并非针对个人的建议。'),videoFallback:L('If the player is unavailable, use the original video link.','如果播放器无法使用，请通过原始视频链接观看。'),
+  externalVideo:L('Watch this video on YouTube.','请前往 YouTube 观看此视频。'),
+  selectedResource:L('Selected resource','精选资源'),archiveVideo:L('Archive','历史资源'),videoArchive:L('From our video archive','历史视频资源'),moreAboutVideo:L('About this video','视频简介'),publisherGuide:L('Moneysmart guide','Moneysmart 官方指南'),resourceUnavailable:L('The original video is no longer publicly available. Explore the publisher’s resources instead.','原视频目前已无法公开访问，请浏览发布机构的官方资源。'),videoArchiveNote:L('Earlier resources are retained for reference. Rules, products and economic conditions may have changed.','早期资源保留供参考。相关规则、产品和经济环境可能已有变化。'),
   articleNotice:L('From the archive','历史存档'),articleNoticeText:L('This article was originally published on the date below. It is an introduction to the topic, not current guidance for your individual circumstances. Check the linked official resources or speak with us before acting.','本文最初发表于下方所示日期，是主题介绍，不能作为您当前个人情况的具体建议。采取行动前，请查看相关官方资源或与我们联系。'),originalArticle:L('Original Bexceed article','Bexceed 原始文章'),
   contactHero:[L('Let’s talk.','聊一聊。'),L('About your next step.','明确您的下一步。')],contactLead:L('Tell us a little about your needs. We’ll help you find the right support.','向我们介绍您的需求，一起找到适合的支持。'),
   privacyTitle:L('Your information.','您的信息。'),privacyAccent:L('Handled with care.','认真对待。'),notFound:L('We couldn’t find that page.','未找到该页面。'),notFoundText:L('The link may have changed. Explore our services or return to the homepage.','链接可能已更改。您可以查看我们的服务，或返回首页。'),home:L('Back to home','返回首页'),
@@ -61,10 +64,12 @@ export const serviceData=[
 export const topicData=[
  {id:'economy',title:L('Australian economy & markets','澳洲经济与市场'),description:L('RBA and economic commentary','澳洲联储与经济评论')},
  {id:'tax-legal',title:L('Tax & legal','税务与法规'),description:L('Resources from ATO, ASIC and ACCC','ATO、ASIC 与 ACCC 资源')},
- {id:'cloud-accounting',title:L('Cloud accounting','云端会计'),description:L('Xero guides and tutorials','Xero 指南与教程')},
- {id:'china',title:L('China insights','中国观察'),description:L('Business, technology and cross-border perspectives','商业、科技与跨境视角')}
+ {id:'cloud-accounting',title:L('Technology & cloud accounting','科技与云端会计'),description:L('Xero, online payments and expense management','Xero、在线收款及费用管理')},
+ {id:'china',title:L('China insights','中国观察'),description:L('Business, technology and cross-border perspectives','商业、科技与跨境视角')},
+ {id:'superannuation',title:L('Superannuation & retirement','养老金与退休'),description:L('Planning, contributions and retirement essentials','退休规划、养老金缴款与基础知识')}
 ];
 export const videoData=[
+ ...clientVideoData,
  {id:'22yAoHE7at0',topic:'economy',title:L('Summary of Current Economic Conditions','经济状况概览'),publisher:'Reserve Bank of Australia',date:'2023-05-16',note:L('Economic data as at 4 May 2023.','经济数据截至 2023 年 5 月 4 日。')},
  {id:'6zQ_5l-RHRw',topic:'economy',title:L('The uncomfortable truth about Australia’s rental crisis','澳洲租赁危机的现实'),publisher:'Australian Financial Review · The Fin',date:'2023-04-12',note:L('An archive discussion of rental pressure and the economy.','关于租赁压力及经济的历史讨论。')},
  {id:'FnWzudxrTq4',topic:'tax-legal',title:L('Consumer Data Right — how it works','消费者数据权——如何运作'),publisher:'ACCC',date:'2020-06-28',note:L('Choice, control and access to your data.','了解数据的选择权、控制权与访问。')},

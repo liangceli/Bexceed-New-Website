@@ -1,3 +1,8 @@
+import {clientVideoData} from './client-video-data.js';
+import {localize} from './localize.js';
+import {formatResourceDate} from './video-library.js';
+import videoPosters from './video-posters.json' with {type:'json'};
+
 const sources = [
   { url: 'https://bexceed.com.au/single-touch-payroll-phase-2/', image: '/assets/insight-payroll.webp', datetime: '2021-04-22' },
   { url: 'https://bexceed.com.au/how-to-digitally-sign-and-return-your-documents-through-xero-sign/', image: '/assets/insight-digital-signing.webp', datetime: '2021-04-22' },
@@ -41,8 +46,11 @@ const copy = {
 
 export function getInsights(locale) {
   const translation = copy[locale] || copy.en;
-  return { read: translation.read, articles: sources.map((source, index) => {
+  const articles = sources.map((source, index) => {
     const [category, date, title, description] = translation.items[index];
-    return { ...source, category, date, title, description };
-  }) };
+    return { ...source, category, date, title, description, path:'/insights/'+['single-touch-payroll-phase-2','xero-sign','why-consider-an-smsf'][index] };
+  });
+  const video=localize(clientVideoData[0],locale);
+  articles[0]={path:'/insights/videos/cloud-accounting#video-'+video.id,image:videoPosters[video.id],datetime:video.date,date:formatResourceDate(video.date,locale),title:video.title,description:video.note,category:locale==='en'?'Xero · Video':locale==='zh-TW'?'Xero · 影片':'Xero · 视频',read:locale==='en'?'Explore video':locale==='zh-TW'?'觀看影片':'观看视频',isVideo:true};
+  return {read:translation.read,articles};
 }

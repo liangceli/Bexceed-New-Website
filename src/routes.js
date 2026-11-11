@@ -2,7 +2,7 @@ import { resolveLocale } from './content.js';
 
 export const serviceIds=['individuals','businesses','smsf','compliance','business-solutions','advisory'];
 export const articleIds=['single-touch-payroll-phase-2','xero-sign','why-consider-an-smsf','sharing-economy-tax'];
-export const videoCategories=['economy','tax-legal','cloud-accounting','china'];
+export const videoCategories=['economy','tax-legal','cloud-accounting','china','superannuation'];
 export const allRoutes=['/','/about','/services',...serviceIds.map(x=>'/services/'+x),'/pricing',...['individuals','businesses','smsf'].map(x=>'/pricing/'+x),'/insights',...articleIds.map(x=>'/insights/'+x),'/insights/videos',...videoCategories.map(x=>'/insights/videos/'+x),'/contact','/privacy'];
 const aliases={'/about-us-2':'/about','/our-services':'/services','/thoughts':'/insights','/single-touch-payroll-phase-2':'/insights/single-touch-payroll-phase-2','/how-to-digitally-sign-and-return-your-documents-through-xero-sign':'/insights/xero-sign','/why-considering-self-managed-super-fund-smsf':'/insights/why-consider-an-smsf','/the-sharing-economy-tax':'/insights/sharing-economy-tax','/cache':'/insights/single-touch-payroll-phase-2','/adelaide-chinese-accountant-and-tax-agent-smsf-companyregistration':'/'};
 export function resolveRoute(pathname){
